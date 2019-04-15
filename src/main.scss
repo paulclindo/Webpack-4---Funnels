@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:700');
+
+// Fonts
+$primary-font:'Raleway',
+sans-serif;
+$secondary-font: 'Open Sans',
+sans-serif;
+
+// Colors
+$color-primary: hsl(243, 86%, 85%);
+$color-secondary: hsl(243, 87%, 12%);
+$color-background: #2F2885;
+
+$color-gray: hsl(0, 0%, 50%);
+$color-button:hsl(163, 95%, 43%);
+
+// **-*-*-*-*-*-*-------------*-*-*-*-*-
+body {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: $primary-font;
+    color: $color-secondary;
+        font-size: 40px;
+
+}
+
+p {
+    font-family: $color-secondary;
+    color: $color-gray;
+    font-size: 20px;
+}
+
+.container {
+    margin: 0 auto;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .logo-wrapper {
+        background: $color-background;
+        text-align: center;
+
+        figure {
+            margin-top: 30%;
+        }
+    }
+
+    .form-wrapper {
+        width: 75%;
+        display: grid;
+        grid-template-rows: 200px 1fr 1fr 100px;
+        margin: 0 auto;
+
+        .header-form {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            figure {
+                margin: 0;
+                width: 100px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .social-media {
+                text-align: center;
+
+                a {
+                    text-decoration: none;
+                    font-size: 20px;
+                    margin: 15px;
+                    color: $color-secondary;
+                }
+            }
+        }
+
+        .real-form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            margin:10px;
+            h3 {
+                color: $color-secondary;
+                font-size: 20px;
+                
+            }
+            input {
+                width: 280px;
+                height: 38px;
+                padding: 10px;
+                font-size: 20px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12);
+                border: none;
+            }
+
+            a {
+                margin: auto;
+
+                padding: 15px 60px;
+                font-weight: 700;
+                text-decoration: none;
+                background: $color-button;
+                color: white;
+                font-size: 18px;
+                border-radius: 5px;
+
+            }
+        }
+        .footer {
+            text-align: right;
+        }
+    }
+
+
+}
